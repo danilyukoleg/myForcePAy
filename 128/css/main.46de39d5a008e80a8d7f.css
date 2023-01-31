@@ -475,6 +475,18 @@ body {
   position: relative;
   gap: 15px;
 }
+
+.list::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 6px;
+  display: block;
+  width: 8px;
+  height: 100%;
+  background: rgba(200, 200, 200, 0.5);
+  border-radius: 40px;
+}
 .list__item {
   display: flex;
   border-bottom: 1px solid #c8c8c8;
@@ -679,6 +691,11 @@ body {
   background-image: url(../assets/images/like.svg);
 }
 
+.block {
+  width: 80%;
+  height: 80px;
+}
+
 .dials {
   width: 470px;
 }
@@ -695,7 +712,21 @@ body {
   padding-top: 20px;
   border-left: 2px solid #c8c8c8;
   position: relative;
+  padding-right: 23px;
 }
+
+.dials__list::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 6px;
+  display: block;
+  width: 8px;
+  height: 100%;
+  background: rgba(200, 200, 200, 0.5);
+  border-radius: 40px;
+}
+
 .dials__list::before {
   content: "";
   position: absolute;
@@ -703,7 +734,7 @@ body {
   width: 2px;
   background-color: #c8c8c8;
   top: 0;
-  right: 2px;
+  right: 25px;
 }
 .dials__list li {
   padding-left: 20px;
@@ -914,6 +945,25 @@ body {
   }
   .dials {
     width: 100%;
+  }
+  .simplebar-scrollbar {
+    display: none !important;
+  }
+
+  .list::after {
+    display: none;
+  }
+
+  .dials__list::after {
+    display: none;
+  }
+
+  .dials__list::before {
+    right: 1px;
+  }
+
+  .dials__list {
+    padding-right: 0;
   }
 }
 @media (max-width: 480px) {
@@ -1132,8 +1182,7 @@ body {
 
 .simplebar-track.simplebar-vertical {
   top: 0;
-  width: 8px;
-  background: rgba(200, 200, 200, 0.5);
+  width: 22px;
   border-radius: 40px;
   height: 100%;
 }
