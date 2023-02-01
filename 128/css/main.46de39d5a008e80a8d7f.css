@@ -460,7 +460,7 @@ body {
 .list {
   width: 100%;
   max-width: 515px;
-  height: 300px;
+  height: 442px;
   position: relative;
   top: 0;
   left: 0;
@@ -476,21 +476,10 @@ body {
   gap: 15px;
 }
 
-.list::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 6px;
-  display: block;
-  width: 8px;
-  height: 100%;
-  background: rgba(200, 200, 200, 0.5);
-  border-radius: 40px;
-}
 .list__item {
   display: flex;
   border-bottom: 1px solid #c8c8c8;
-  padding-bottom: 15px;
+  padding: 15px 0;
 }
 .list__descr {
   display: flex;
@@ -707,24 +696,12 @@ body {
 }
 .dials__list {
   width: 470px;
-  height: 375px;
+  height: 500px;
   margin-top: 10px;
-  padding-top: 20px;
+  padding-top: 28px;
   border-left: 2px solid #c8c8c8;
   position: relative;
   padding-right: 23px;
-}
-
-.dials__list::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 6px;
-  display: block;
-  width: 8px;
-  height: 100%;
-  background: rgba(200, 200, 200, 0.5);
-  border-radius: 40px;
 }
 
 .dials__list::before {
@@ -1164,8 +1141,7 @@ body {
   position: absolute;
   content: "";
   background: #2d8df1;
-  border-radius: 88px;
-  width: 20px;
+  width: 8px;
   height: 40px;
   left: 2px;
   right: 2px;
@@ -1182,7 +1158,8 @@ body {
 
 .simplebar-track.simplebar-vertical {
   top: 0;
-  width: 22px;
+  width: 8px;
+  background: rgba(200, 200, 200, 0.5);
   border-radius: 40px;
   height: 100%;
 }
@@ -1190,7 +1167,7 @@ body {
 .simplebar-scrollbar:before {
   top: 2px;
   bottom: 2px;
-  left: 2px;
+  left: 0;
   right: 2px;
 }
 

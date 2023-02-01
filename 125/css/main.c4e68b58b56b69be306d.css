@@ -460,7 +460,7 @@ body {
 .list {
   width: 100%;
   max-width: 515px;
-  height: 300px;
+  height: 442px;
   position: relative;
   top: 0;
   left: 0;
@@ -476,21 +476,10 @@ body {
   gap: 15px;
 }
 
-.list::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 6px;
-  display: block;
-  width: 8px;
-  height: 100%;
-  background: rgba(200, 200, 200, 0.5);
-}
-
 .list__item {
   display: flex;
   border-bottom: 1px solid #c8c8c8;
-  padding-bottom: 15px;
+  padding: 15px 0;
 }
 .list__descr {
   display: flex;
@@ -691,6 +680,11 @@ body {
   background-image: url(../assets/images/like.svg);
 }
 
+.block {
+  width: 80%;
+  height: 80px;
+}
+
 .dials {
   width: 470px;
 }
@@ -702,24 +696,12 @@ body {
 }
 .dials__list {
   width: 470px;
-  height: 324px;
+  height: 450px;
   margin-top: 10px;
-  padding-top: 20px;
+  padding-top: 28px;
   border-left: 2px solid #c8c8c8;
   position: relative;
   padding-right: 23px;
-}
-
-.dials__list::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 6px;
-  display: block;
-  width: 8px;
-  height: 100%;
-  background: rgba(200, 200, 200, 0.5);
-  border-radius: 40px;
 }
 
 .dials__list::before {
@@ -758,6 +740,34 @@ body {
 
 .not-br {
   margin-bottom: 10px;
+}
+
+.pay {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 172px;
+}
+.pay input {
+  width: 113px;
+  height: 30px;
+  border: 1px solid #c8c8c8;
+  border-radius: 5px;
+  font-size: 14px;
+  line-height: 17px;
+  outline: none;
+  color: #4c4c4c;
+  padding-left: 10px;
+}
+
+.payment-percent {
+  margin-left: auto;
+}
+
+.separate-pay {
+  display: flex;
+  gap: 20px;
 }
 
 .cash {
@@ -913,7 +923,6 @@ body {
   .dials {
     width: 100%;
   }
-
   .simplebar-scrollbar {
     display: none !important;
   }
@@ -966,8 +975,16 @@ body {
   .list__full_price {
     padding-right: 10px;
   }
+  .separate-pay {
+    flex-direction: column;
+    gap: 0;
+  }
   .deal__item_left {
     width: 100%;
+  }
+  .payment-percent {
+    margin-left: 0;
+    margin-right: auto;
   }
 }
 [data-simplebar] {
@@ -1124,8 +1141,7 @@ body {
   position: absolute;
   content: "";
   background: #2d8df1;
-  border-radius: 88px;
-  width: 20px;
+  width: 8px;
   height: 40px;
   left: 2px;
   right: 2px;
@@ -1142,20 +1158,16 @@ body {
 
 .simplebar-track.simplebar-vertical {
   top: 0;
-  width: 22px;
+  width: 8px;
+  background: rgba(200, 200, 200, 0.5);
   border-radius: 40px;
   height: 100%;
-}
-
-.block {
-  width: 80%;
-  height: 80px;
 }
 
 .simplebar-scrollbar:before {
   top: 2px;
   bottom: 2px;
-  left: 2px;
+  left: 0;
   right: 2px;
 }
 
@@ -1242,4 +1254,4 @@ body {
   border-radius: 10px;
 }
 
-/*# sourceMappingURL=../sourcemaps/css/main.c4e68b58b56b69be306d.css.map*/
+/*# sourceMappingURL=../sourcemaps/css/main.46de39d5a008e80a8d7f.css.map*/
