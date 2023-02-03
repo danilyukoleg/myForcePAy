@@ -1,1 +1,0 @@
-!function(){"use strict";var e=document.querySelectorAll(".services__type");console.log("servicesType: ",e);var s=document.querySelectorAll(".services__list");console.log("servicesList: ",s),e.forEach((function(e,c){e.addEventListener("click",(function(){s.forEach((function(e){return e.classList.remove("shown")})),s[c].classList.add("shown")}))}))}();

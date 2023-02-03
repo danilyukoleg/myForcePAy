@@ -443,8 +443,9 @@ body {
 }
 .deal__wrap {
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  align-items: center;
+  gap: 177px;
+  overflow: auto;
 }
 .deal__item_left {
   max-width: 50%;
@@ -459,7 +460,7 @@ body {
 
 .list {
   width: 100%;
-  max-width: 515px;
+  max-width: 470px;
   height: 442px;
   position: relative;
   top: 0;
@@ -485,7 +486,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 5px;
-  margin-right: 85px;
+  margin-right: 58px;
 }
 .list__descr p {
   font-size: 16px;
@@ -587,6 +588,7 @@ body {
 .payment__form {
   display: flex;
   flex-direction: column;
+  width: 470px;
 }
 .payment__choice {
   width: 172px;
@@ -608,7 +610,7 @@ body {
 }
 .payment__comment {
   resize: none;
-  width: 527px;
+  width: 100%;
   height: 129px;
   border: 2px solid #c8c8c8;
   border-radius: 10px;
@@ -859,14 +861,6 @@ body {
   background: #42e653;
 }
 
-@media (max-width: 1096px) {
-  .deal__wrap {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-  }
-}
 @media (max-width: 992px) {
   .container {
     max-width: 960px;

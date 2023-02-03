@@ -175,7 +175,8 @@ textarea {
  */
 
 button,
-input { /* 1 */
+input {
+  /* 1 */
   overflow: visible;
 }
 
@@ -185,7 +186,8 @@ input { /* 1 */
  */
 
 button,
-select { /* 1 */
+select {
+  /* 1 */
   text-transform: none;
 }
 
@@ -525,7 +527,8 @@ textarea {
  */
 
 button,
-input { /* 1 */
+input {
+  /* 1 */
   overflow: visible;
 }
 
@@ -535,7 +538,8 @@ input { /* 1 */
  */
 
 button,
-select { /* 1 */
+select {
+  /* 1 */
   text-transform: none;
 }
 
@@ -699,4 +703,141 @@ template {
   display: none;
 }
 
-:root{--font-family: "Rubik", sans-serif;--color-grey: #c8c8c8;--color-text: #1f1f1f}*{margin:0;padding:0;box-sizing:border-box}ul,ol{padding:0;margin:0;list-style-type:none}button{border:none;background:none}input{border:none;outline:none;padding:8px 10px;background-color:#eef7fe;border-radius:5px;font-weight:400;font-size:14px;text-overflow:ellipsis}a{text-decoration:none;color:inherit}img{width:100%;height:auto}html{height:100%}body{margin:0;font-family:"Rubik", sans-serif;font-family:var(--font-family);font-size:15px;line-height:1.5;font-weight:400;color:#1f1f1f;color:var(--color-text);overflow-x:hidden}.popup{position:relative;margin:20px;padding:30px;width:400px;border:2px solid #eee;border-radius:20px}.popup__title{font-size:20px;margin-bottom:10px}.popup__text{font-weight:400;margin-bottom:15px}.popup__name{margin-bottom:10px}.popup__heading{font-weight:500;font-size:1rem}.popup__time{width:128px;display:flex;align-items:center;justify-content:space-between}.popup__time p:last-child{margin-left:20px}.popup__row{display:flex;gap:26px}.popup__total{display:flex;align-items:center;gap:20px}.popup__username{width:80px;height:30px;margin-left:20px}.popup__password{display:block;width:100px;height:30px;margin-top:5px;margin-bottom:15px}.popup__btn{width:180px;height:60px;color:#fff;font-size:16px;text-align:center;background:#2d8df1;box-shadow:0px 4px 4px rgba(0,0,0,.25);border-radius:10px}.popup__close{cursor:pointer;position:absolute;top:30px;right:30px}@media (max-width: 450px){body{padding:20px;font-size:14px}.popup{margin:0;width:100%}.popup__row{flex-direction:column;gap:0}}
+:root {
+  --font-family: "Rubik", sans-serif;
+  --color-grey: #c8c8c8;
+  --color-text: #1f1f1f;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+button {
+  border: none;
+  background: none;
+}
+input {
+  border: none;
+  outline: none;
+  padding: 8px 10px;
+  background-color: #eef7fe;
+  border-radius: 5px;
+  font-weight: 400;
+  font-size: 14px;
+  text-overflow: ellipsis;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+html {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: "Rubik", sans-serif;
+  font-family: var(--font-family);
+  font-size: 15px;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #1f1f1f;
+  color: var(--color-text);
+  overflow-x: hidden;
+}
+.popup {
+  position: absolute;
+  margin: 20px;
+  padding: 30px;
+  width: 400px;
+  border: 2px solid #eee;
+  border-radius: 20px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.popup__title {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.popup__text {
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+.popup__name {
+  margin-bottom: 10px;
+}
+.popup__heading {
+  font-weight: 500;
+  font-size: 1rem;
+}
+.popup__time {
+  width: 128px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.popup__time p:last-child {
+  margin-left: 20px;
+}
+.popup__row {
+  display: flex;
+  gap: 26px;
+}
+.popup__total {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.popup__username {
+  width: 80px;
+  height: 30px;
+  margin-left: 20px;
+}
+.popup__password {
+  display: block;
+  width: 100px;
+  height: 30px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+.popup__btn {
+  width: 180px;
+  height: 60px;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  background: #2d8df1;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+.popup__close {
+  cursor: pointer;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+@media (max-width: 450px) {
+  body {
+    padding: 20px;
+    font-size: 14px;
+  }
+  .popup {
+    margin: 0;
+    width: 100%;
+  }
+  .popup__row {
+    flex-direction: column;
+    gap: 0;
+  }
+}
