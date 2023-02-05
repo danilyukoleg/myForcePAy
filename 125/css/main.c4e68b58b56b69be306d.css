@@ -437,15 +437,14 @@ body {
 }
 
 .deal {
-  padding-top: 163px;
-  padding-bottom: 140px;
+  padding-top: 40px;
+  padding-bottom: 22px;
   width: 100%;
 }
 .deal__wrap {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 177px;
-  overflow: auto;
 }
 .deal__item_left {
   max-width: 50%;
@@ -859,6 +858,95 @@ body {
 
 .close__button {
   background: #42e653;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    max-width: 1024px;
+    padding: 0 52px;
+  }
+
+  .write__button,
+  .close__button {
+    width: 170px;
+  }
+
+  .cash__button {
+    width: 369px;
+    row-gap: 10px;
+    column-gap: 10px;
+  }
+  .dials__list {
+    width: 367px;
+    height: 265px;
+  }
+  .deal__wrap {
+    gap: 75px;
+  }
+
+  .cash__title {
+    margin-bottom: 10px;
+  }
+
+  .cash__br {
+    width: 367px;
+  }
+  .dials {
+    width: 367px;
+  }
+  .list {
+    max-width: 425px;
+    padding-right: 24px;
+    height: 295px;
+  }
+
+  .payment__form {
+    width: 427px;
+  }
+
+  .payment__comment {
+    width: 383px;
+    height: 57px;
+    margin-top: 10px;
+  }
+
+  .list__descr {
+    margin-right: 40px;
+  }
+
+  .list__descr p {
+    font-size: 15px;
+  }
+
+  .list__input {
+    width: 48px;
+  }
+
+  .payment__btn {
+    width: 170px;
+    height: 60px;
+    margin-top: 10px;
+  }
+
+  .list__item {
+    padding: 10px 0;
+  }
+
+  .discount__form label input {
+    height: 38px;
+  }
+
+  .discount {
+    margin-top: 0;
+  }
+
+  .deals__button {
+    padding: 10px 0;
+  }
+
+  .cash li:last-child {
+    margin-top: 10px;
+  }
 }
 
 @media (max-width: 992px) {
